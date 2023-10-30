@@ -89,6 +89,7 @@
       "!src/**/*.d.ts"
     ],
     "setupFiles": [
+      "<rootDir>/src/jest.polyfills.js",
       "react-app-polyfill/jsdom"
     ],
     "setupFilesAfterEnv": [
@@ -135,5 +136,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "msw": "^2.0.1",
+    "undici": "^5.27.0"
   }
 }
